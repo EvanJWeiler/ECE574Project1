@@ -22,9 +22,9 @@
 //////////////////////////////////////////////////////////////////////////////////
 
 
-module MUL(a, b, prod);
-    parameter DATAWIDTH = 63;
-    input [DATAWIDTH:0] a, b;
+module MUL #(parameter DATAWIDTH = 64)(a, b, prod);
+    input [DATAWIDTH-1:0] a, b;
+    output reg [2*DATAWIDTH-1:0] prod;
     output reg prod;
     
     always @(a, b) begin
