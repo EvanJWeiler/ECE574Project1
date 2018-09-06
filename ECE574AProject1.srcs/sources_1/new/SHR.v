@@ -22,14 +22,13 @@
 //////////////////////////////////////////////////////////////////////////////////
 
 
-module SHR(a, sh_amt, d);
-    parameter DATAWIDTH = 63;
-    input [DATAWIDTH:0] a;
+module SHR #(parameter DATAWIDTH = 64)(a, sh_amt, d);
+    input [DATAWIDTH-1:0] a;
     input sh_amt;
-    output reg d;
+    output reg [DATAWIDTH-1:0] d;
     
     always @(sh_amt) begin
-        d <= a << sh_amt;
+        d <= a >> sh_amt;
     end
     
 endmodule
