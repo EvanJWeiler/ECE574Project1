@@ -22,10 +22,9 @@
 //////////////////////////////////////////////////////////////////////////////////
 
 
-module ADD(a, b, sum);
-    parameter DATAWIDTH = 63; 
-    input [DATAWIDTH:0] a, b;
-    output reg [DATAWIDTH:0] sum;
+module ADD #(parameter DATAWIDTH = 64)(a, b, sum);
+    input [DATAWIDTH-1:0] a, b;
+    output reg [DATAWIDTH-1:0] sum;
     
     always @(a, b) begin
         sum <= a + b;
