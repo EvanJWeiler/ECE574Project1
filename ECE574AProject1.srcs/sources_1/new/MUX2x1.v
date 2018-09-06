@@ -22,10 +22,10 @@
 //////////////////////////////////////////////////////////////////////////////////
 
 
-module MUX2x1(a, b, sel, d);
-    input a, b;
+module MUX2x1 #(parameter DATAWIDTH = 64)(a, b, sel, d);
+    input [DATAWIDTH-1:0] a, b;
     input sel;
-    output reg d;
+    output reg [DATAWIDTH-1:0] d;
     
     always @(sel) begin
         if(sel) begin
