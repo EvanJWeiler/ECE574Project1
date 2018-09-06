@@ -28,7 +28,7 @@ module MUL #(parameter DATAWIDTH = 64)(a, b, prod);
     output reg prod;
     
     always @(a, b) begin
-        prod <= a + b;
+        prod <= a * b;
     end
     
 endmodule
