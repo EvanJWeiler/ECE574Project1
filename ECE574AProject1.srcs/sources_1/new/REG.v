@@ -22,9 +22,10 @@
 //////////////////////////////////////////////////////////////////////////////////
 
 
-module REG(d, Clk, Rst, q);
-    parameter DATAWIDTH = 63;
-    input [DATAWIDTH:0] d;
+module REG #(parameter DATAWIDTH = 64)(d, Clk, Rst, q);
+    input [DATAWIDTH-1:0] d;
+    input Clk, Rst;
+    output reg [DATAWIDTH-1:0] q;
     input Clk, Rst;
     output reg q;
     
