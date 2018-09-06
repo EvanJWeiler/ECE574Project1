@@ -21,10 +21,8 @@
 // 
 //////////////////////////////////////////////////////////////////////////////////
 
-
-module COMP(a, b, gt, lt, eq);
-    parameter DATAWIDTH = 63;
-    input [DATAWIDTH:0] a, b;
+module COMP #(parameter DATAWIDTH = 64)(a, b, gt, lt, eq);
+    input [DATAWIDTH-1:0] a, b;
     output reg gt, lt, eq;
     
     always @(a, b) begin
