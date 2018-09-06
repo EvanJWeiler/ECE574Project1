@@ -22,10 +22,9 @@
 //////////////////////////////////////////////////////////////////////////////////
 
 
-module SUB(a, b, diff);
-    parameter DATAWIDTH = 63;
-    input [DATAWIDTH:0] a, b;
-    output reg diff;
+module SUB #(parameter DATAWIDTH = 64)(a, b, diff);
+    input [DATAWIDTH-1:0] a, b;
+    output reg [DATAWIDTH-1:0] diff;
     
     always @(a, b) begin
         diff <= a - b;
