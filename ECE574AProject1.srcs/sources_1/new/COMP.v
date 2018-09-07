@@ -21,6 +21,7 @@
 // 
 //////////////////////////////////////////////////////////////////////////////////
 
+
 module COMP #(parameter DATAWIDTH = 64)(a, b, gt, lt, eq);
     input [DATAWIDTH-1:0] a, b;
     output reg gt, lt, eq;

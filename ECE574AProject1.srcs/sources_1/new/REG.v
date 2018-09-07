@@ -22,12 +22,10 @@
 //////////////////////////////////////////////////////////////////////////////////
 
 
-module REG #(parameter DATAWIDTH = 64)(d, Clk, Rst, q);
+module REG #(parameter DATAWIDTH = 2)(d, Clk, Rst, q);
     input [DATAWIDTH-1:0] d;
     input Clk, Rst;
     output reg [DATAWIDTH-1:0] q;
-    input Clk, Rst;
-    output reg q;
     
     always @(posedge Clk) begin
         if(Rst == 1) begin
