@@ -37,7 +37,7 @@ ADD add7(l10, l11, l2);
 SHR shr1(l2, sa, l2div2);
 SHR shr2(l2div2, sa, l2div4);
 SHR shr3(l2div4, sa, l2div8);
-
+REG reg1(avg,l2div8);
 
 //l00 = a + b
 //l01 = c + d
