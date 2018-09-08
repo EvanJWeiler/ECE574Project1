@@ -42,6 +42,9 @@ read_verilog -library xil_defaultlib {
   C:/Users/evanj/OneDrive/SchoolWork/4Senior/574/Assignment1/ECE574Project1/ECE574AProject1.srcs/sources_1/new/SUB.v
   C:/Users/evanj/OneDrive/SchoolWork/4Senior/574/Assignment1/ECE574Project1/ECE574AProject1.srcs/sources_1/new/circuit1.v
   C:/Users/evanj/OneDrive/SchoolWork/4Senior/574/Assignment1/ECE574Project1/ECE574AProject1.srcs/sources_1/new/TopTestTiming.v
+  C:/Users/evanj/OneDrive/SchoolWork/4Senior/574/Assignment1/ECE574Project1/ECE574AProject1.srcs/sources_1/new/DIV.v
+  C:/Users/evanj/OneDrive/SchoolWork/4Senior/574/Assignment1/ECE574Project1/ECE574AProject1.srcs/sources_1/new/DEC.v
+  C:/Users/evanj/OneDrive/SchoolWork/4Senior/574/Assignment1/ECE574Project1/ECE574AProject1.srcs/sources_1/new/INC.v
 }
 # Mark all dcp files as not used in implementation to prevent them from being
 # stitched into the results of this synthesis run. Any black boxes in the
