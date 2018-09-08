@@ -24,7 +24,7 @@
 
 module SHL #(parameter DATAWIDTH = 64)(a, sh_amt, d);
     input [DATAWIDTH-1:0] a;
-    input sh_amt;
+    input [$clog2(DATAWIDTH)-1:0] sh_amt;
     output reg [DATAWIDTH-1:0] d;
     
     always @(sh_amt) begin

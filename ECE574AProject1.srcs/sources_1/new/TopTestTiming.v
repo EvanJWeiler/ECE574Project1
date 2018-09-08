@@ -20,20 +20,24 @@
 //////////////////////////////////////////////////////////////////////////////////
 
 
-module TopTestTiming(a, b, z, Clk );
-input [63:0] a,b;
-output reg[63:0] z;
+module TopTestTiming #(parameter DATAWIDTH = 2)(a, b, z, Clk );
+
+input [DATAWIDTH-1:0] a;
+input [$clog2(DATAWIDTH)-1:0] b;
+output reg[DATAWIDTH-1:0] z;
 input Clk;
-reg [63:0] awire, bwire;
-wire [63:0] zwire;
+reg [DATAWIDTH-1:0] awire;
+reg [$clog2(DATAWIDTH)-1:0] bwire;
+wire [DATAWIDTH-1:0] zwire;
 
 always@(posedge Clk) begin
     awire <= a;
     bwire <= b;
     z <= zwire;
 end
-   
-ADD add2(awire, zwire, zwire);
+
+//SHL #(.DATAWIDTH(DATAWIDTH))shl1(awire, bwire, zwire);
+SHR #(.DATAWIDTH(DATAWIDTH))shr1(awire, bwire, zwire);
 
 endmodule
 
