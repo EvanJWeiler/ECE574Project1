@@ -2,8 +2,8 @@
 # Vivado v2018.2 (64-bit)
 # SW Build 2258646 on Thu Jun 14 20:03:12 MDT 2018
 # IP Build 2256618 on Thu Jun 14 22:10:49 MDT 2018
-# Start of session at: Fri Sep  7 21:44:14 2018
-# Process ID: 5040
+# Start of session at: Fri Sep  7 22:26:13 2018
+# Process ID: 19660
 # Current directory: C:/Users/evanj/OneDrive/SchoolWork/4Senior/574/Assignment1/ECE574Project1/ECE574AProject1.runs/synth_1
 # Command line: vivado.exe -log TopTestTiming.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source TopTestTiming.tcl
 # Log file: C:/Users/evanj/OneDrive/SchoolWork/4Senior/574/Assignment1/ECE574Project1/ECE574AProject1.runs/synth_1/TopTestTiming.vds
