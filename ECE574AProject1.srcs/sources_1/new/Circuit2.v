@@ -37,6 +37,8 @@ module Circuit2(a, b, c, z, x);
     //MUX2x1 mux2();
     SHL shl(g, dLTe, xwire);
     SHR shr(h, dEQe, zwire);
+    REG reg1(x, xWire);
+    REG reg2(z, zWire);
        
     
 endmodule
