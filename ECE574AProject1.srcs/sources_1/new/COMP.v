@@ -31,13 +31,13 @@ module COMP #(parameter DATAWIDTH = 64)(a, b, gt, lt, eq);
         lt <= 1'b0;
         eq <= 1'b0;
         if (a > b) begin
-            gt = 1'b1;
+            gt <= 1'b1;
         end
         else if(a == b) begin
-            eq = 1'b1;
+            eq <= 1'b1;
         end
         else begin
-            lt = 1'b1;
+            lt <= 1'b1;
         end
     end
     
