@@ -1,6 +1,6 @@
-Circuit1 : 14.474ns
-Circuit2 : 26.994ns
-Circuit3 : 34.521ns
-Circuit4 : 38.579ns
+Circuit1 : 
+Circuit2 : 
+Circuit3 : 
+Circuit4 : 
 Circuit5 : 
 Circuit6 : 
