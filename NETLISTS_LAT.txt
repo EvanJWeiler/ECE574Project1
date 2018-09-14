@@ -1,6 +1,6 @@
-Circuit1 :    actual: 6.662 
-Circuit2 :    actual: 9.215
-Circuit3 : 
-Circuit4 : 
-Circuit5 : 
-Circuit6 : 
+Circuit1 : 43.997 6.662 
+Circuit2 : 67.195 9.215
+Circuit3 : 71.403
+Circuit4 : 79.706
+Circuit5 : 651.000
+Circuit6 : 250.22
