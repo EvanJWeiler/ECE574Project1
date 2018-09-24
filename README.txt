@@ -4,10 +4,10 @@ Diego Akantera
 Evan Weiler
 Logan Knott (lknott)
 
-2. Xilinx Vivado 2017.3
+2. Xilinx Vivado 2016.4
 
 3. Part: xc7a100tcsg324-1
-   Speed Grade:
+   Speed Grade:-1 [default]
 
 3. For out critical path of modules we ran the synthesis of the
 module then ran the "Report timing summary" which allowed us to 
