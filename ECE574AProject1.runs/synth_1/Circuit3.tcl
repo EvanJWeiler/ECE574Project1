@@ -17,9 +17,6 @@ proc create_report { reportName command } {
     send_msg_id runtcl-5 warning "$msg"
   }
 }
-set_param synth.incrementalSynthesisCache C:/Users/evanj/AppData/Roaming/Xilinx/Vivado/.Xil/Vivado-14672-DESKTOP-QR17O1B/incrSyn
-set_msg_config -id {Synth 8-256} -limit 10000
-set_msg_config -id {Synth 8-638} -limit 10000
 create_project -in_memory -part xc7a100tcsg324-1
 
 set_param project.singleFileAddWarning.threshold 0
@@ -64,12 +61,12 @@ set_property used_in_implementation false [get_files C:/Users/evanj/OneDrive/Sch
 set_param ips.enableIPCacheLiteLoad 0
 close [open __synthesis_is_running__ w]
 
-synth_design -top Circuit2 -part xc7a100tcsg324-1
+synth_design -top Circuit3 -part xc7a100tcsg324-1
 
 
 # disable binary constraint mode for synth run checkpoints
 set_param constraints.enableBinaryConstraints false
-write_checkpoint -force -noxdef Circuit2.dcp
-create_report "synth_1_synth_report_utilization_0" "report_utilization -file Circuit2_utilization_synth.rpt -pb Circuit2_utilization_synth.pb"
+write_checkpoint -force -noxdef Circuit3.dcp
+create_report "synth_1_synth_report_utilization_0" "report_utilization -file Circuit3_utilization_synth.rpt -pb Circuit3_utilization_synth.pb"
 file delete __synthesis_is_running__
 close [open __synthesis_is_complete__ w]
