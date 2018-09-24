@@ -2,7 +2,7 @@
 
 
 
-module Circuit5(a, b, c, d, zero, z);
+module Circuit5(a, b, c, d, zero, Clk, Rst, z);
 input [63:0] a, b, c, d, zero;
 input Clk, Rst;
 output [63:0] z;
@@ -15,6 +15,6 @@ DIV div2(a, d, f);
 MOD mod1(a, b, g);
 COMP comp1(g, zero, gt, lt, gEQz);
 MUX2x1 mux1(e, f, gEQz, zwire);
-REG reg(zwire, Clk, Rst, z);`
+REG reg1(zwire, Clk, Rst, z);`
 
 endmodule

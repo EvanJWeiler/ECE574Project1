@@ -40,4 +40,4 @@ EAStep()
      fi
 }
 
-EAStep vivado -log TopTestTiming.vds -m64 -product Vivado -mode batch -messageDb vivado.pb -notrace -source TopTestTiming.tcl
+EAStep vivado -log Circuit2.vds -m64 -product Vivado -mode batch -messageDb vivado.pb -notrace -source Circuit2.tcl
