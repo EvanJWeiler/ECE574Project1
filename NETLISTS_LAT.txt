@@ -1,7 +1,6 @@
-Netlist Name : Estimated | Actual
-    Circuit1 : 43.997    | 6.662 
-    Circuit2 : 67.195    | 9.215
-    Circuit3 : 71.403    | 7.711
-    Circuit4 : 79.706    | 7.814
-    Circuit5 : 651.000   | 224.228
-    Circuit6 : 250.22    | 223.890
+Circuit1 : 43.997 6.662 
+Circuit2 : 67.195 9.215
+Circuit3 : 71.403 7.711
+Circuit4 : 79.706 7.814
+Circuit5 : 651.000 224.228
+Circuit6 : 250.22 223.890
