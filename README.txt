@@ -2,7 +2,7 @@
 Brendan Cassidy (brendancassidy)
 Diego Akantera (dalcantra7)
 Evan Weiler (evanweiler)
-Logan Knott (lknott)
+Logan Knott (lbknott)
 
 2. Xilinx Vivado 2016.4
 
