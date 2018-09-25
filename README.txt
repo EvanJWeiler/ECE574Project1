@@ -1,6 +1,6 @@
 1. Members
 Brendan Cassidy (brendancassidy)
-Diego Akantera
+Diego Akantera (dalcantra7)
 Evan Weiler (evanweiler)
 Logan Knott (lknott)
 
@@ -16,3 +16,7 @@ longest of the paths possible in order to get the "critical path".
 For the manual calculation of the circuit we added the critical path
 of each module with the correct bit widths to get the estimation.  
 For the circuit the process was the same as the modules.
+In addition we found the when running our synthesis on the circuit
+Vivado will optimize the program and even limit how our SHR are implemented.
+We noticed that it created a snythesized module that only had the time
+delay of the total of all three.
