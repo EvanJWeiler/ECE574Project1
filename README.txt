@@ -1,7 +1,7 @@
 1. Members
 Brendan Cassidy (brendancassidy)
 Diego Akantera
-Evan Weiler
+Evan Weiler (evanweiler)
 Logan Knott (lknott)
 
 2. Xilinx Vivado 2016.4
